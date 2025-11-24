@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { lessonDisplay } from '$lib/lessonsDisplay';
+	import { lessonDisplay } from '$lib/interfaces/lessons-display';
 
 
 </script>

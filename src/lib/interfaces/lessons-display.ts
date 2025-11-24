@@ -1,10 +1,10 @@
-type allLinks =
+type AllLinks =
 	| "/lessons/kitchen-utensils"
 	| "/lessons/bedroom";
 
 interface Lesson {
 		id: number;
-		link: allLinks;
+		link: AllLinks;
 		imageLink: string;
 }
 

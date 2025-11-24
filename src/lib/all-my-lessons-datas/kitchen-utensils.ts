@@ -1,4 +1,4 @@
-import type { LessonsPlan } from '$lib/lessons-plan';
+import type { LessonsPlan } from '$lib/interfaces/lessons-plan';
 
 export const lessonKitchenUtensils: LessonsPlan = {
 	lessonWords: [
