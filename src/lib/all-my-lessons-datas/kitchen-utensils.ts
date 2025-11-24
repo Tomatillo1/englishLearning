@@ -1,6 +1,6 @@
 import type { LessonsPlan } from '$lib/lessons-plan';
 
-const lessonKitchenUtensils: LessonsPlan = {
+export const lessonKitchenUtensils: LessonsPlan = {
 	lessonWords: [
 		{ word: "Knife", caption: "A sharp tool used to cut food." },
 		{ word: "Fork", caption: "A utensil with prongs used to pick up food." },
