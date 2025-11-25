@@ -1,14 +1,14 @@
 <script lang="ts">
 	import { lessonKitchenUtensils } from '$lib/all-my-lessons-datas/kitchen-utensils';
 	import DisplayLessonsWords from '$lib/all-composants/DisplayLessonsWords.svelte';
-	import ButtonLinkToQuizz from '$lib/all-composants/ButtonLinkToQuizz.svelte';
+	import ButtonLinkToQuizz from '$lib/all-composants/ButtonLinkToQuiz.svelte';
 
 	const kitchenWords = lessonKitchenUtensils.lessonWords;
 </script>
 <main class="h-screen flex flex-col">
 	<h1>Kitchen utensils</h1>
 	<section class="flex flex-row justify-center">
-		<ButtonLinkToQuizz linkToQuizz="/lessons/kitchen-utensils/quiz"/>
+		<ButtonLinkToQuizz linkToQuiz="/lessons/kitchen-utensils/quiz"/>
 	</section>
 	<section class="flex flex-col gap-4 px-4 pb-8 pt-4">
 		<DisplayLessonsWords wordsList={kitchenWords} />

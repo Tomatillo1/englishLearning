@@ -9,7 +9,10 @@
 	<h1>EnglishLearning</h1>
 	<section id="allTheme">
 		{#each lessonDisplay as lesson (lesson.id)}
-			<a class="theme" href={resolve(lesson.link)}><img src={lesson.imageLink} alt="test"></a>
+			<div class="flex flex-col gap-1">
+				<a class="theme" href={resolve(lesson.link)}><img src={lesson.imageLink} alt="test"></a>
+				<h2 class="text-center text-xs font-bold">{lesson.name}</h2>
+			</div>
 		{/each}
 	</section>
 </main>
