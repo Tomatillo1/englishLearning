@@ -5,6 +5,7 @@
 
 	const kitchenWords = lessonKitchenUtensils.lessonWords;
 </script>
+
 <main class="h-screen flex flex-col">
 	<h1>Kitchen utensils</h1>
 	<section class="flex flex-row justify-center">

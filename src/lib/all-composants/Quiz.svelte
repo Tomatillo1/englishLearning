@@ -1,7 +1,4 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
-	import { resolve } from '$app/paths';
-
 	type Props = {
 		questionsList: {
 			questionNumber: number;
@@ -11,6 +8,7 @@
 				trueOrFalse: boolean;
 			}[];
 		}[];
+		onQuizFinished: (result: number) => void;
 	};
 	let props: Props = $props();
 
@@ -49,7 +47,7 @@
 			{ answer: props.questionsList[whichQuestionDisplay].answers[2].answer, boolean: props.questionsList[whichQuestionDisplay].answers[2].trueOrFalse }
 		]
 	});
-
+	let finalResult = $state(0)
 	let selectedAnswer: Answer | undefined = $state(undefined);
 	const nextQuestion = () => {
 		if (howManyQuestionsDone < 10) {
@@ -59,7 +57,7 @@
 			whichQuestionDisplay = allQuestionsNumber[index] - 1;
 			return whichQuestionDisplay;
 		} else {
-			goto(resolve("/lessons/quiz/results"))
+			props.onQuizFinished(finalResult);
 		}
 	}
 
@@ -68,8 +66,12 @@
 		boolean: boolean;
 	}
 
+
 	const onAnswerClicked = (button: Answer) => {
 		selectedAnswer = button;
+		if (button.boolean === true) {
+			finalResult++;
+		}
 	}
 
 </script>
@@ -80,7 +82,7 @@
 		{#each displayTheQuestion.answers as button (button.answer)}
 			<button onclick={() => onAnswerClicked(button)} disabled={selectedAnswer !== undefined} class="border-2 border-black rounded-full w-2/5" class:bg-green-500={selectedAnswer?.answer === button.answer && button.boolean} class:bg-red-500={selectedAnswer?.answer === button.answer && !button.boolean} class:text-green-500={selectedAnswer !== undefined && selectedAnswer?.answer !== button.answer && button.boolean}>{button.answer}</button>
 		{/each}
-		<button onclick={nextQuestion} class="border-2 border-black italic rounded-full font-bold w-1/2">{howManyQuestionsDone === 10 ? "Finish" : "Next"}</button>
+		<button onclick={nextQuestion} disabled={selectedAnswer === undefined} class="border-2 border-black italic rounded-full font-bold w-1/2">{howManyQuestionsDone === 10 ? "Finish" : "Next"}</button>
 	</section>
 </main>
 <style>
