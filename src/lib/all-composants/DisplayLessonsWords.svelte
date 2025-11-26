@@ -11,6 +11,3 @@
 	<p class="text-sm"><span class="font-bold">{wordAndCaption.word} :</span> <span
 		class="italic">{wordAndCaption.caption}</span></p>
 {/each}
-
-
-
