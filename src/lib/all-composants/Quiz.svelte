@@ -26,7 +26,6 @@
 		return allQuestionsNumber;
 	}
 	getListOfNumber();
-	console.log(allQuestionsNumber);
 
 	interface DisplayTheQuestion {
 		caption: string;
@@ -59,9 +58,7 @@
 		}
 	}
 
-
 </script>
-
 <main class="flex flex-col justify-center items-center w-full">
 	<p class="font-bold">{howManyQuestionsDone}/10</p>
 	<h2>{displayTheQuestion.caption}</h2>
@@ -72,3 +69,6 @@
 		<button onclick={nextQuestion} class="border-2 border-black italic rounded-full font-bold w-1/2">Next</button>
 	</section>
 </main>
+<style>
+
+</style>
