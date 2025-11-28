@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Quiz from '$lib/all-composants/Quiz.svelte';
 	import { lessonKitchenUtensils } from '$lib/all-my-lessons-datas/kitchen-utensils';
-	import { resolve } from '$app/paths';
 
 	const kitchenQuestions = lessonKitchenUtensils.lessonQuestions
 	let displayResult: number | undefined = $state(undefined);
