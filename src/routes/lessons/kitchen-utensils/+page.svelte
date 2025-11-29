@@ -2,23 +2,23 @@
 	import { lessonKitchenUtensils } from '$lib/all-my-lessons-datas/kitchen-utensils';
 	import DisplayLessonsWords from '$lib/all-composants/DisplayLessonsWords.svelte';
 	import ButtonLinkToQuizz from '$lib/all-composants/ButtonLinkToQuiz.svelte';
+	import { House } from '@lucide/svelte';
+	import { resolve } from '$app/paths';
 
 	const kitchenWords = lessonKitchenUtensils.lessonWords;
 </script>
-
-<main class="h-screen flex flex-col">
-	<h1>Kitchen utensils</h1>
-	<section class="flex flex-row justify-center">
-		<ButtonLinkToQuizz linkToQuiz="/lessons/kitchen-utensils/quiz"/>
+<header class="flex flex-col bg-sky-950 text-gray-50 pb-6 pt-4 relative">
+	<a href={resolve("/")}>
+		<House class="absolute top-2 left-2" />
+	</a>
+	<section class="flex flex-col items-center">
+		<h1 class="text-3xl font-bold">Kitchen utensils</h1>
+		<p class="italic text-gray-300">Study the vocabulary below</p>
 	</section>
-	<section class="flex flex-col gap-4 px-4 pb-8 pt-4">
+</header>
+<main class="h-screen flex flex-col w-full relative pt-4">
+	<ButtonLinkToQuizz linkToQuiz="/lessons/kitchen-utensils/quiz" />
+	<section class="w-full px-4 pb-16">
 		<DisplayLessonsWords wordsList={kitchenWords} />
 	</section>
 </main>
-<style>
-    h1 {
-        text-align: center;
-        padding: 1rem 0;
-        font-size: 1.5rem;
-    }
-</style>

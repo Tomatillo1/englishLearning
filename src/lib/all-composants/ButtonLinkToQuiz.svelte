@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import type { AllLinksStartQuiz } from '$lib/interfaces/links-start-quiz';
+	import { Trophy } from '@lucide/svelte';
 		type Props = {
 			linkToQuiz: AllLinksStartQuiz;
 		};
 		let props: Props = $props();
 </script>
-<a class="border-2 border-black px-4 py-1 italic rounded-full" href={resolve(props.linkToQuiz)}>Start quiz</a>
+	<a class="flex flex-row items-center gap-2 justify-center fixed bottom-0 bg-red-800 text-white py-2 rounded-lg left-4 right-4 bottom-4 font-bold text-base" href={resolve(props.linkToQuiz)}><Trophy class="stroke-white"/>Start quiz</a>

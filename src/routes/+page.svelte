@@ -34,29 +34,3 @@
 		{/each}
 	</section>
 </main>
-
-
-<style>
-
-    #allTheme {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        padding: 1rem 1rem 0 1rem;
-    }
-
-    .theme {
-        aspect-ratio: 1 / 1;
-        overflow: hidden;
-        border-radius: 2rem;
-        border: 1px black solid;
-    }
-
-    .theme img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
-</style>
