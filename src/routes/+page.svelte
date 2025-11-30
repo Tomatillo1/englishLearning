@@ -3,6 +3,7 @@
 	import { lessonDisplay } from '$lib/interfaces/lessons-display';
 	import { Star } from '@lucide/svelte';
 	import { ChevronRight } from '@lucide/svelte';
+
 </script>
 
 <header class="flex flex-col bg-sky-950 text-gray-50 gap-2 rounded-b-4xl pb-6">

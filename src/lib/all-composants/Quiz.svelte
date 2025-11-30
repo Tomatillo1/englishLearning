@@ -82,7 +82,7 @@
 		<p class="font-bold text-xl">{howManyQuestionsDone}/10</p>
 	</div>
 	<div class="mt-4 w-full h-4 rounded-full bg-gray-200 overflow-hidden">
-		<div class="h-full rounded-full bg-red-700 overflow-hidden" style="width: {howManyQuestionsDone * 10}%"></div>
+		<div class="h-full rounded-full bg-red-700 overflow-hidden transition-all duration-300" style="width: {howManyQuestionsDone * 10}%"></div>
 	</div>
 </header>
 <main class="h-screen flex flex-col w-full justify-center pt-8 pb-12">
@@ -101,7 +101,7 @@
 				{/if}
 				</button>
 		{/each}
-		<button onclick={nextQuestion} disabled={selectedAnswer === undefined} class="mt-2 bg-sky-950 text-white italic rounded-lg font-bold w-2/3 py-2">{howManyQuestionsDone === 10 ? "Finish" : "Next"}</button>
+		<button onclick={nextQuestion} disabled={selectedAnswer === undefined} class="mt-2 bg-sky-950 text-white rounded-lg font-bold w-2/3 py-2">{howManyQuestionsDone === 10 ? "Finish" : "Next"}</button>
 	</div>
 </section>
 </main>
