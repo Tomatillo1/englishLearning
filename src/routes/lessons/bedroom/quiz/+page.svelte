@@ -13,8 +13,8 @@
 
 
 {#if displayResult === undefined}
-	<main class="min-h-screen w-full flex flex-col px-4 justify-center items-center">
-		<section class="flex flex-col bg-white border-2 border-gray-100 rounded-2xl w-full max-w-md items-center justify-center max-h-[90vh] py-8 gap-6">
+	<main class="min-h-screen w-full flex flex-col px-4 py-8 justify-center items-center">
+		<section class="flex flex-col bg-white border-2 border-gray-100 rounded-2xl w-full max-w-md items-center justify-center flex-1 py-8 gap-6">
 			<h1 class="text-3xl font-bold text-sky-950">Results</h1>
 			<Trophy class="bg-sky-950 stroke-white size-32 p-4 rounded-4xl"/>
 			<p class="text-2xl text-sky-950">Your result is :</p>
