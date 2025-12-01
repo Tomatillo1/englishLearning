@@ -10,7 +10,7 @@
 </script>
 <header class="flex flex-col bg-sky-950 text-gray-50 pb-6 pt-4 relative">
 	<a href={resolve("/")}>
-		<House class="absolute top-2 left-2" />
+		<House class="absolute top-3 left-3" />
 	</a>
 	<section class="flex flex-col items-center">
 		<h1 class="text-3xl font-bold">Kitchen utensils</h1>
@@ -20,7 +20,7 @@
 <main class="h-screen flex flex-col w-full relative pt-4">
 	<!-- Todo : modify link -->
 	<ButtonLinkToQuizz linkToQuiz="/lessons/bedroom/quiz" />
-	<section class="w-full px-4 pb-16">
+	<section class="w-full px-4 pb-20">
 		<DisplayLessonsWords wordsList={bedroomWords} />
 	</section>
 </main>

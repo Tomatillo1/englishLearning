@@ -7,4 +7,4 @@
 		};
 		let props: Props = $props();
 </script>
-	<a class="flex flex-row items-center gap-2 justify-center fixed bottom-0 bg-red-700 text-white py-2 rounded-lg left-4 right-4 bottom-4 font-bold text-base" href={resolve(props.linkToQuiz)}><Trophy class="stroke-white"/>Start quiz</a>
+	<a class="flex flex-row items-center gap-2 justify-center fixed bg-red-700 text-white py-2 rounded-lg left-4 right-4 bottom-6 font-bold text-base" href={resolve(props.linkToQuiz)}><Trophy class="stroke-white"/>Start quiz</a>

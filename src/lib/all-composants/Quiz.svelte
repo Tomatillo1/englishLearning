@@ -84,8 +84,8 @@
 		<div class="h-full rounded-full bg-red-700 overflow-hidden transition-all duration-300" style="width: {howManyQuestionsDone * 10}%"></div>
 	</div>
 </header>
-<main class="h-screen flex flex-col w-full justify-center pt-8 pb-12">
-<section class="flex flex-col px-8 bg-white border-2 border-gray-100 rounded-2xl h-full justify-center">
+<main class="flex-1 flex flex-col w-full justify-center pt-8 pb-12">
+<section class="flex flex-col px-8 bg-white border-2 border-gray-100 rounded-2xl flex-1 justify-center">
 	<h2 class="text-center text-xl font-bold">{displayTheQuestion.caption}</h2>
 	<div class="flex flex-col w-full gap-4 pt-4 items-center">
 		{#each displayTheQuestion.answers as button (button.answer)}
