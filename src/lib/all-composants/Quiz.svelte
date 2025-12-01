@@ -86,7 +86,7 @@
 </header>
 <main class="flex-1 flex flex-col w-full justify-center pt-8 pb-12">
 <section class="flex flex-col px-8 bg-white border-2 border-gray-100 rounded-2xl flex-1 justify-center">
-	<h2 class="text-center text-xl font-bold">{displayTheQuestion.caption}</h2>
+	<h2 class="text-center text-xl font-bold min-h-[3rem]">{displayTheQuestion.caption}</h2>
 	<div class="flex flex-col w-full gap-4 pt-4 items-center">
 		{#each displayTheQuestion.answers as button (button.answer)}
 			<button onclick={() => onAnswerClicked(button)} disabled={selectedAnswer !== undefined} class="flex flex-row justify-between items-center border-2 border-gray-100 rounded-2xl w-full text-start py-4 px-4 text-lg" class:bg-green-200={selectedAnswer?.answer === button.answer && button.boolean} class:border-green-500={selectedAnswer?.answer === button.answer && button.boolean} class:bg-red-500={selectedAnswer?.answer === button.answer && !button.boolean} class:text-white={selectedAnswer?.answer === button.answer && !button.boolean} class:border-green-400={selectedAnswer !== undefined && selectedAnswer?.answer !== button.answer && button.boolean} class:bg-green-100={selectedAnswer !== undefined && selectedAnswer?.answer !== button.answer && button.boolean}>
