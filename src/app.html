@@ -1,13 +1,31 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>EnglishLearning</title>
-		<link rel="icon" href="%sveltekit.assets%/assets/favicon-el.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+<head>
+	<meta charset="utf-8" />
+	<title>EnglishLearning</title>
+
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- PWA manifest -->
+	<link rel="manifest" href="/manifest.json" />
+
+	<!-- App colors -->
+	<meta name="theme-color" content="#faf5ea">
+
+	<!-- iOS PWA essentials -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="English Learning">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<!-- App icons -->
+	<link rel="apple-touch-icon" href="%sveltekit.assets%/icon.png">
+	<link rel="icon" href="%sveltekit.assets%/assets/favicon-el.png">
+
+	%sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover">
+<div style="display: contents">%sveltekit.body%</div>
+</body>
 </html>

@@ -4,7 +4,6 @@ interface Answer {
 }
 
 interface Question {
-	questionNumber: number;
 	question: string;
 	answers: Answer[];
 }

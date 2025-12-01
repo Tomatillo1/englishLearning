@@ -3,7 +3,6 @@
 	import { Check } from '@lucide/svelte';
 	type Props = {
 		questionsList: {
-			questionNumber: number;
 			question: string;
 			answers: {
 				answer: string;

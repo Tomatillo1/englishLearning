@@ -26,7 +26,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 
 	lessonQuestions: [
 		{
-			questionNumber: 1,
 			question: "What do you use to cut vegetables?",
 			answers: [
 				{ answer: "Fork", trueOrFalse: false },
@@ -35,7 +34,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 2,
 			question: "What utensil do you use to drain pasta?",
 			answers: [
 				{ answer: "Colander", trueOrFalse: true },
@@ -44,7 +42,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 3,
 			question: "What tool helps you peel a potato?",
 			answers: [
 				{ answer: "Peeler", trueOrFalse: true },
@@ -53,7 +50,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 4,
 			question: "What do you use to stir soup?",
 			answers: [
 				{ answer: "Spoon", trueOrFalse: true },
@@ -62,7 +58,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 5,
 			question: "What do you use to flip a pancake?",
 			answers: [
 				{ answer: "Spatula", trueOrFalse: true },
@@ -71,7 +66,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 6,
 			question: "What utensil helps you mix eggs quickly?",
 			answers: [
 				{ answer: "Whisk", trueOrFalse: true },
@@ -80,7 +74,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 7,
 			question: "What do you use to remove hot trays from the oven?",
 			answers: [
 				{ answer: "Oven mitt", trueOrFalse: true },
@@ -89,7 +82,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 8,
 			question: "What do you use to shred cheese?",
 			answers: [
 				{ answer: "Grater", trueOrFalse: true },
@@ -98,7 +90,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 9,
 			question: "What utensil is best for grabbing hot food?",
 			answers: [
 				{ answer: "Knife", trueOrFalse: false },
@@ -107,7 +98,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 10,
 			question: "What do you use to measure flour?",
 			answers: [
 				{ answer: "Measuring cups", trueOrFalse: true },
@@ -116,7 +106,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 11,
 			question: "What do you use to measure spices?",
 			answers: [
 				{ answer: "Measuring spoons", trueOrFalse: true },
@@ -125,7 +114,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 12,
 			question: "What utensil helps remove water from rice?",
 			answers: [
 				{ answer: "Sieve", trueOrFalse: true },
@@ -134,7 +122,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 13,
 			question: "What tool is used to open a can of beans?",
 			answers: [
 				{ answer: "Can opener", trueOrFalse: true },
@@ -143,7 +130,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 14,
 			question: "What do you use to flatten dough?",
 			answers: [
 				{ answer: "Rolling pin", trueOrFalse: true },
@@ -152,7 +138,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 15,
 			question: "What deep tool is used to serve soup?",
 			answers: [
 				{ answer: "Ladle", trueOrFalse: true },
@@ -161,7 +146,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 16,
 			question: "What do you use to mix salad ingredients?",
 			answers: [
 				{ answer: "Bowl", trueOrFalse: true },
@@ -170,7 +154,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 17,
 			question: "What utensil do you use to fry an egg?",
 			answers: [
 				{ answer: "Pan", trueOrFalse: true },
@@ -179,7 +162,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 18,
 			question: "What utensil do you use to boil pasta?",
 			answers: [
 				{ answer: "Pot", trueOrFalse: true },
@@ -188,7 +170,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 19,
 			question: "Which item is a safe surface to cut meat on?",
 			answers: [
 				{ answer: "Cutting board", trueOrFalse: true },
@@ -197,7 +178,6 @@ export const lessonKitchenUtensils: LessonsPlan = {
 			]
 		},
 		{
-			questionNumber: 20,
 			question: "What do you use to spread butter on bread?",
 			answers: [
 				{ answer: "Spatula", trueOrFalse: false },
