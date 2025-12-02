@@ -16,7 +16,7 @@
 		</div>
 	</section>
 </header>
-<main class="flex flex-col items-center w-full pt-4">
+<main class="flex flex-col items-center w-full pt-4 pb-8">
 	<section class="flex flex-col gap-4 w-full px-4">
 		<h2 class="text-start font-bold text-sky-950 text-lg">Learning Paths</h2>
 		{#each lessonDisplay as lesson (lesson.id)}

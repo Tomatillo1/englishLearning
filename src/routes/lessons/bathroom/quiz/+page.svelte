@@ -1,14 +1,14 @@
 <script lang="ts">
 	import Quiz from '$lib/all-composants/Quiz.svelte';
 	// Todo : change import
-	import { lessonKitchenUtensils } from '$lib/all-my-lessons-datas/kitchen-utensils';
+	import { lessonBathroomItems } from '$lib/all-my-lessons-datas/bathroom';
 	import { Trophy } from '@lucide/svelte';
 	import { RotateCcw } from '@lucide/svelte';
 	import { House } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 
 	// Todo : change variable
-	const kitchenUtensilsQuestions = lessonKitchenUtensils.lessonQuestions;
+	const bathRoomQuestions = lessonBathroomItems.lessonQuestions;
 	let displayResult: number | undefined = $state(undefined);
 	const onQuizFinished = (result: number) => displayResult = result;
 </script>
@@ -30,7 +30,7 @@
 {:else}
 	<main class="h-screen flex flex-col w-full px-4 pt-4 ">
 		<!-- Todo : change variable for data -->
-			<Quiz questionsList={kitchenUtensilsQuestions} onQuizFinished={onQuizFinished} />
+		<Quiz questionsList={bathRoomQuestions} onQuizFinished={onQuizFinished} />
 	</main>
 {/if}
 
