@@ -18,7 +18,8 @@
 		error(404, 'Theme does not exist');
 	}
 
-	const wordsList = allLessons[safeTheme ?? 'bathroom']?.lessonWords;
+	const wordsList = allLessons[safeTheme ?? 'bathroom']?.lesson.lessonWords;
+	const lessonName = allLessons[safeTheme ?? 'Bathroom']?.title;
 </script>
 
 <header class="flex flex-col bg-sky-950 text-gray-50 pb-6 pt-4 relative">
@@ -27,12 +28,11 @@
 	</a>
 	<section class="flex flex-col items-center">
 		<!-- Todo : change lesson name -->
-		<h1 class="text-3xl font-bold">Kitchen utensils</h1>
+		<h1 class="text-3xl font-bold">{lessonName}</h1>
 		<p class="italic text-gray-300">Study the vocabulary below</p>
 	</section>
 </header>
 <main class="h-screen flex flex-col w-full relative pt-4">
-	<!-- Todo : change link to quiz -->
 	{#if safeTheme}
 		<ButtonLinkToQuizz linkToQuiz="/lessons/{safeTheme}/quiz" />
 	{/if}

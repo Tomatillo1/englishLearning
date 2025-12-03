@@ -5,11 +5,11 @@ import { lessonKitchenUtensils } from '$lib/all-my-lessons-datas/kitchen-utensil
 import { lessonLivingRoom } from '$lib/all-my-lessons-datas/livingroom';
 
 export const allLessons = {
-	bathroom: lessonBathroomItems,
-	kitchen: lessonKitchenObjects,
-	bedroom: lessonBedroomItems,
-	'kitchen-utensils': lessonKitchenUtensils,
-	livingroom: lessonLivingRoom
+	bathroom: { title: 'Bathroom', lesson: lessonBathroomItems },
+	kitchen: { title: 'Kitchen', lesson: lessonKitchenObjects },
+	bedroom: { title: 'Bedroom', lesson: lessonBedroomItems },
+	'kitchen-utensils': { title: 'Kitchen utensils', lesson: lessonKitchenUtensils },
+	livingroom: { title: 'Living room', lesson: lessonLivingRoom }
 };
 
 export type Theme = keyof typeof allLessons;

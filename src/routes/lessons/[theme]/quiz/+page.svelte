@@ -20,7 +20,7 @@
 	}
 
 	// Todo : change variable
-	const questionsList = allLessons[safeTheme ?? 'bathroom']?.lessonQuestions;
+	const questionsList = allLessons[safeTheme ?? 'bathroom']?.lesson.lessonQuestions;
 	let displayResult: number | undefined = $state(undefined);
 	const onQuizFinished = (result: number) => (displayResult = result);
 </script>
