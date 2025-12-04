@@ -27,7 +27,6 @@
 		<House class="absolute top-3 left-3" />
 	</a>
 	<section class="flex flex-col items-center">
-		<!-- Todo : change lesson name -->
 		<h1 class="text-3xl font-bold">{lessonName}</h1>
 		<p class="italic text-gray-300">Study the vocabulary below</p>
 	</section>
