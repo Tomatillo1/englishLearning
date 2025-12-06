@@ -6,6 +6,12 @@ import { lessonLivingRoom } from './livingroom';
 import { lessonGardenTools } from './garden';
 import { lessonClothes } from './clothes';
 import { lessonWeather } from './weather';
+import { lessonCleaning } from './cleaning';
+import { lessonEmotions } from './emotions';
+import { lessonSensations } from './sensations';
+import { lessonVegetables } from './vegetables';
+import { lessonFruits } from './fruits';
+import { lessonWeatherAdvanced } from './weatherAdvanced';
 
 export const allLessons = {
 	bathroom: { title: 'Bathroom', lesson: lessonBathroomItems },
@@ -15,7 +21,13 @@ export const allLessons = {
 	livingroom: { title: 'Living room', lesson: lessonLivingRoom },
 	garden: { title: 'Garden', lesson: lessonGardenTools },
 	clothes: { title: 'Clothes', lesson: lessonClothes },
-	weather: { title: 'Weather', lesson: lessonWeather }
+	cleaning: { title: 'Cleaning', lesson: lessonCleaning },
+	emotions: { title: 'Emotions', lesson: lessonEmotions },
+	sensations: { title: 'Sensations', lesson: lessonSensations },
+	vegetables: { title: 'Vegetables', lesson: lessonVegetables },
+	fruits: { title: 'Fruits', lesson: lessonFruits },
+	weather: { title: 'Weather', lesson: lessonWeather },
+	'weather-advanced': { title: 'Weather', lesson: lessonWeatherAdvanced }
 };
 
 export type Theme = keyof typeof allLessons;

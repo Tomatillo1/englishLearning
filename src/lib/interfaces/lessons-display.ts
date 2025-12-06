@@ -7,7 +7,13 @@ type AllLinks =
 	| '/lessons/kitchen'
 	| '/lessons/garden'
 	| '/lessons/clothes'
-	| '/lessons/weather';
+	| '/lessons/cleaning'
+	| '/lessons/emotions'
+	| '/lessons/sensations'
+	| '/lessons/vegetables'
+	| '/lessons/fruits'
+	| '/lessons/weather'
+	| '/lessons/weather-advanced';
 
 interface Lesson {
 	id: number;
@@ -69,9 +75,51 @@ export const lessonDisplay: Lesson[] = [
 	},
 	{
 		id: 8,
+		link: '/lessons/cleaning',
+		imageLink: '/lessons-images/cleaning.webp',
+		name: 'Cleaning',
+		difficulty: 'Beginners'
+	},
+	{
+		id: 9,
+		link: '/lessons/emotions',
+		imageLink: '/lessons-images/emotions.webp',
+		name: 'Emotions',
+		difficulty: 'Beginners'
+	},
+	{
+		id: 10,
+		link: '/lessons/sensations',
+		imageLink: '/lessons-images/sensations.webp',
+		name: 'Sensations',
+		difficulty: 'Beginners'
+	},
+	{
+		id: 11,
+		link: '/lessons/vegetables',
+		imageLink: '/lessons-images/vegetables.webp',
+		name: 'Vegetables',
+		difficulty: 'Beginners'
+	},
+	{
+		id: 12,
+		link: '/lessons/fruits',
+		imageLink: '/lessons-images/fruits.webp',
+		name: 'Fruits',
+		difficulty: 'Beginners'
+	},
+	{
+		id: 13,
 		link: '/lessons/weather',
 		imageLink: '/lessons-images/weather.webp',
 		name: 'Weather',
 		difficulty: 'Beginners'
+	},
+	{
+		id: 14,
+		link: '/lessons/weather-advanced',
+		imageLink: '/lessons-images/weather.webp',
+		name: 'Weather',
+		difficulty: 'Advanced'
 	}
 ];

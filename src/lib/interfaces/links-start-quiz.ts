@@ -6,4 +6,10 @@ export type AllLinksStartQuiz =
 	| '/lessons/kitchen/quiz'
 	| '/lessons/garden/quiz'
 	| '/lessons/clothes/quiz'
-	| '/lessons/weather/quiz';
+	| '/lessons/cleaning/quiz'
+	| '/lessons/emotions/quiz'
+	| '/lessons/sensations/quiz'
+	| '/lessons/vegetables/quiz'
+	| '/lessons/fruits/quiz'
+	| '/lessons/weather/quiz'
+	| '/lessons/weather-advanced/quiz';
